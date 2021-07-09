@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="icon" type="image/png" href="icons8-todo-list-50.png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="dark">
+    <div class="hero-container outer-shadow">
+        <div class="todo-container">
+          <div class="add-task">
+            <input type="text">
+            <span class="plus">+</span>
+          </div>
+          <div class="tasks-content inner-shadow ">
+            <!-- <span class="no-tasks-message">No Tasks To Show</span> -->
+          </div>
+        </div>
+        <div class="tasks-stats inner-shadow">
+          <div class="tasks-count">
+            Tasks <span>0</span>
+          </div>
+          <div class="tasks-completed">
+            Completed <span>0</span>
+          </div>
+          <div class="clear-fix"></div>
+        </div>
+        <div class="tasks-buttons inner-shadow">
+          <span class="d-finished">Clear Finished</span>
+          <span class="d-all">Delete All</span>
+
+          <div class="clear-fix"></div>
+        </div>
+    </div>
+    <div class="style-switcher inner-shadow">
+        <div class="style-toggler outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night outer-shadow hover-in-shadow">
+            <i class="icon fas"></i>
+        </div>
+        <div class="colors">
+          <h4>Themes Colors</h4>
+          <div class="colors-list">
+            <span data-color="#ff9800"></span>
+            <span data-color="#e91e63"></span>
+            <span  class="active" data-color="#009688"></span>
+            <span data-color="#03a9f4"></span>
+            <span data-color="#4caf50"></span>
+          </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
